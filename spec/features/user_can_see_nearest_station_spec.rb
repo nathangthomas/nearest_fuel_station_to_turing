@@ -9,8 +9,8 @@ describe 'As a user' do
     end
 
     click_on('Find Nearest Station')
-    expect(current_path).to eq('./search')
-    expect(page).to have_content('Closest Station')
+    expect(current_path).to eq('/search')
+    expect(page).to have_content('Nearest Station')
 
     within('.station') do
       expect(page).to have_css('.name')
