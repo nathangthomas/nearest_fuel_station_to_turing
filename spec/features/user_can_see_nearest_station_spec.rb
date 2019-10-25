@@ -4,7 +4,7 @@ describe 'As a user' do
   it "when I vist '/' and I select 'Turing' from the start location drop down and I click 'Find Nearest Station' then I should be on the './search' page where I see the closest station including Name, Address, Fuel Type, Distance, Access Times. I also see travel time and html directions to the station." do
 
     visit '/'
-    within('.navbar') do
+    within('.navbar-search-form') do
       select 'Turing', from: :location
     end
 
